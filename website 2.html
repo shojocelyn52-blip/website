@@ -1,0 +1,421 @@
+<html>
+
+<head>
+    <title>Taste of Belize - Southern & Eastern Districts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(5, 30, 20, 0.55);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .navbar {
+            background-color: #0a1f10;
+            padding: 14px;
+            border-bottom: 3px solid #e8a020;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 22px;
+            margin: 0 6px;
+            border-radius: 6px;
+        }
+
+        .navbar a:hover {
+            background-color: #e8a020;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #e05c2a;
+            color: white;
+        }
+
+        .banner {
+            background-color: rgba(10, 60, 40, 0.82);
+            padding: 60px 20px 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner h1 {
+            font-family: Georgia;
+            font-size: 50px;
+            color: #e8a020;
+            text-shadow: 2px 2px 8px black;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .banner p {
+            font-size: 16px;
+            color: #c8f5e8;
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            background-color: rgba(255, 255, 255, 0.90);
+            color: black;
+            padding: 26px 48px;
+            margin: 26px 40px;
+            border-left: 6px solid #13a68f;
+            border-radius: 12px;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro h2 {
+            font-family: Georgia;
+            color: #1b5e38;
+            font-size: 22px;
+            background: none;
+            padding: 0 0 8px 0;
+            border-radius: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed #13a68f;
+        }
+
+        .intro p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #222;
+        }
+
+        .district {
+            background-color: rgba(255, 255, 255, 0.90);
+            color: black;
+            margin: 26px 40px;
+            padding: 28px;
+            border-radius: 14px;
+            text-align: left;
+            border-top: 6px solid #e05c2a;
+            position: relative;
+            z-index: 1;
+        }
+
+        .district h1 {
+            background-color: #1b5e38;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-family: Georgia;
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+
+        .district h2 {
+            background-color: #e05c2a;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 8px;
+            font-size: 19px;
+            margin: 16px 0 12px;
+        }
+
+        .district p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .district ul {
+            font-size: 15px;
+            line-height: 2.2;
+            padding-left: 10px;
+            color: #222;
+            list-style: none;
+        }
+
+        .district ul li {
+            padding: 3px 0 3px 8px;
+        }
+
+        .img-row {
+            text-align: center;
+            margin: 18px 0;
+        }
+
+       .img-row img {
+         border: 4px solid #0a7c6e;
+         border-radius: 10px;
+         box-shadow: 5px 5px 16px gray;
+         margin: 8px;
+         width: 260px;
+         height: 175px;
+         object-fit: cover;
+
+        }
+
+        a {
+            color: #0a7c6e;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e05c2a;
+            text-decoration: underline;
+        }
+
+        .closing {
+            background-color: rgba(15, 60, 35, 0.92);
+            margin: 26px 40px;
+            padding: 34px;
+            border-radius: 14px;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .closing h2 {
+            background: none;
+            color: #e8a020;
+            font-family: Georgia;
+            font-size: 26px;
+            padding: 0 0 12px 0;
+            border-radius: 0;
+            margin-bottom: 14px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .closing p {
+            color: #c8f5e8;
+            font-size: 16px;
+        }
+
+        .closing a {
+            color: #e8a020;
+        }
+
+        .closing a:hover {
+            color: white;
+        }
+
+        .logos {
+            background-color: #0a1f10;
+            padding: 28px 20px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logos p {
+            color: #e8a020;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+        }
+
+        .logos img {
+            width: 170px;
+            height: 70px;
+            margin: 14px 16px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 6px;
+        }
+
+        .footer {
+            background-color: #050f0a;
+            color: #7abfa0;
+            padding: 14px;
+            font-size: 13px;
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="navbar">
+        <a href="home%20page.html">&#127968; Home</a>
+        <a href="website%201.html">&#127981; Northern &amp; Western</a>
+        <a href="website%202.html" class="active">&#127795; Southern &amp; Eastern</a>
+    </div>
+
+   
+    <div class="banner">
+        <h1>&#127860; Taste of Belize &#127860;</h1>
+        <p>Southern &amp; Eastern Districts</p>
+    </div>
+
+    
+    <div class="intro">
+        <h2>Welcome, Local Tourists! &#127758;</h2>
+        <p>
+            Welcome back to <b>Taste of Belize</b>! This page takes you on a delicious journey through the
+            <b>Southern and Eastern Districts</b> of our beautiful country — Belize City, Stann Creek, and Toledo.
+            Each district is unique in its culture, landscape, and cuisine. From the bustling streets of Belize City
+            to the lush rainforests of Toledo, there is a world of flavor waiting for you. Let's explore! &#127869;
+        </p>
+    </div>
+
+    
+    <div class="district">
+        <h1> Belize District</h1>
+        <p>
+            <font color="#1b5e38"><b>Belize City</b></font> is the largest city in Belize and the country's commercial and cultural hub.
+            With its vibrant streets, historic swing bridge, and colorful Creole culture, Belize City is a city
+            full of energy and character. It is a melting pot of cultures — Creole, Garifuna, Mestizo, and more —
+            which makes its food scene incredibly diverse and exciting!
+        </p>
+
+        <h2>&#127869; St. George Restaurant</h2>
+        <p>
+            <font color="#0a7c6e"><b>St. George Restaurant</b></font> is a well-known dining destination in Belize City,
+            offering authentic Belizean cuisine in a warm and welcoming setting.
+            Named after the nearby St. George's Caye — the site of a famous 1798 battle — this restaurant
+            carries the spirit of Belizean pride in every dish it serves.
+        </p>
+
+        <p><b>&#127860; Signature Dishes &amp; Drinks:</b></p>
+        <ul>
+            <li>&#127843; Boil Up (Belizean National Dish)</li>
+            <li>&#127830; Creole Stew Fish</li>
+            <li>&#127837; Rice and Beans with Coleslaw</li>
+            <li>&#127857; Johnny Cakes with Eggs</li>
+            <li>&#127863; Seaweed Shake</li>
+            <li>&#9749; Belikin Beer</li>
+        </ul>
+
+        <div class="img-row">
+            <img src="st%20george%20restaurant.jpg" alt="St. George Restaurant" />
+            <img src="st%20george%20food.jpg" alt="St. George Restaurant Food" />
+        </div>
+    </div>
+
+    
+    <div class="district">
+        <h1>Stann Creek District</h1>
+        <p>
+            <font color="#1b5e38"><b>Stann Creek</b></font>, home to the vibrant city of Dangriga, is the cultural heartland of the Garifuna people.
+            Known for its lively Garifuna Settlement Day celebrations, beautiful beaches, and the stunning Cockscomb
+            Basin Wildlife Sanctuary, Stann Creek is one of Belize's most culturally rich destinations.
+            The food here is deeply rooted in Garifuna tradition and is unlike anything else in Belize!
+        </p>
+
+        <h2>&#127869; Tipsy Tuna Restaurant</h2>
+        <p>
+            <font color="#0a7c6e"><b>Tipsy Tuna</b></font> is a beloved beachside restaurant and bar in Placencia, Stann Creek,
+            offering stunning views of the Caribbean Sea alongside some seriously amazing food.
+            It's the perfect place to kick back, enjoy the ocean breeze, and treat yourself to fresh seafood
+            and tropical drinks.
+        </p>
+
+        <p><b>&#127860; Signature Dishes &amp; Drinks:</b></p>
+        <ul>
+            <li>&#127843; Hudut (Garifuna Fish Stew with Mashed Plantain)</li>
+            <li>&#127830; Grilled Lobster with Garlic Butter</li>
+            <li>&#127837; Cassava Bread with Coconut Fish</li>
+            <li>&#127857; Conch Fritters</li>
+            <li>&#127863; Rum Punch</li>
+            <li>&#9749; Coconut Margarita</li>
+        </ul>
+
+        <div class="img-row">
+            <img src="tipsy%20tuna%20restaurant.jfif" alt="Tipsy Tuna Restaurant" />
+            <img src="tipsy%20tuna%20food.jpg" alt="Tipsy Tuna Dishes" />
+        </div>
+    </div>
+
+    
+    <div class="district">
+        <h1> Toledo District</h1>
+        <p>
+            <font color="#1b5e38"><b>Toledo</b></font> is Belize's southernmost district and one of its most untouched and breathtaking regions.
+            Known as the "<i>Land of the Maya</i>", Toledo is home to many Mopan and Kekchi Maya villages,
+            lush jungles, and incredible biodiversity. Toledo is also famous for producing some of
+            the finest cacao in the world, making it a chocolate lover's paradise!
+        </p>
+
+       <h2>&#127869; A Piece of Ground Restaurant</h2>
+        <p>
+            <font color="#0a7c6e"><b>A Piece of Ground</b></font> is a charming local restaurant in Punta Gorda, Toledo,
+            known for its farm-to-table style cooking using fresh ingredients grown right from the earth.
+            This cozy spot celebrates the rich agricultural roots of Toledo, serving up wholesome and
+            flavorful meals that reflect the true spirit of southern Belize. &#127807;
+        </p>
+
+        <p><b>&#127860; Signature Dishes &amp; Drinks:</b></p>
+        <ul>
+            <li>&#127830; Slow Cooked Pork with Roasted Vegetables</li>
+            <li>&#127837; Caldo (Maya Chicken Soup)</li>
+            <li>&#127843; Tamales wrapped in Banana Leaves</li>
+            <li>&#127857; Roasted Breadfruit with Butter</li>
+            <li>&#127863; Cacao Tea (Toledo Hot Chocolate)</li>
+            <li>&#9749; Fresh Sugarcane Juice</li>
+        </ul>
+
+        <div class="img-row">
+            <img src="piece%20f%20ground%20restaurant.jfif" alt="A Piece of Ground Restaurant" />
+            <img src="piece%20of%20ground%20food.png" alt="A Piece of Ground Food" />
+        </div>
+    </div>
+
+    
+    <div class="closing">
+        <h2>&#127758; Keep Exploring Belize! &#127758;</h2>
+        <p>
+            We hope you enjoyed discovering the amazing restaurants of Belize's Southern and Eastern Districts!
+            But remember — <b>this is just the beginning</b>. Belize is overflowing with incredible dining options
+            in every district, every village, and every corner of this magnificent country.
+            <br><br>
+            From street food to seaside dining, from Maya cuisine to Garifuna traditions —
+            <b>every meal in Belize tells a story. Make yours unforgettable! &#127869;</b>
+            <br><br>
+            Don't forget to also visit our <a href="website 1.html">Northern &amp; Western Districts page</a> for even more great restaurants!
+        </p>
+    </div>
+
+    
+    <div class="logos">
+        <p>This webpage is proudly brought to you by:</p>
+        <img src="btb%20logo.png" alt="BTB Logo" />
+        <img src="BTIA-LOGO.jpg" alt="BTIA Logo" />
+        <img src="beltraide_logo.jfif" alt="Beltraide Logo" />
+        <img src="ministry%20of%20tourism%20logo.png" alt="Ministry of Tourism Logo" />
+    </div>
+
+    
+    <div class="footer">
+        &copy; 2026 Taste of Belize &nbsp;|&nbsp; Ministry of Tourism &nbsp;|&nbsp; In collaboration with BTB, BTIA &amp; Beltraide
+    </div>
+
+</body>
+</html>

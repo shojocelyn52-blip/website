@@ -1,0 +1,423 @@
+<html>
+
+<head>
+    <title>Taste of Belize - Northern & Western Districts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(5, 30, 20, 0.55);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .navbar {
+            background-color: #0a1f10;
+            padding: 14px;
+            border-bottom: 3px solid #e8a020;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 22px;
+            margin: 0 6px;
+            border-radius: 6px;
+        }
+
+        .navbar a:hover {
+            background-color: #e8a020;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #e05c2a;
+            color: white;
+        }
+
+        .banner {
+            background-color: rgba(10, 60, 40, 0.82);
+            padding: 60px 20px 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner h1 {
+            font-family: Georgia;
+            font-size: 50px;
+            color: #e8a020;
+            text-shadow: 2px 2px 8px black;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .banner p {
+            font-size: 16px;
+            color: #c8f5e8;
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            background-color: rgba(255, 255, 255, 0.90);
+            color: black;
+            padding: 26px 48px;
+            margin: 26px 40px;
+            border-left: 6px solid #13a68f;
+            border-radius: 12px;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro h2 {
+            font-family: Georgia;
+            color: #1b5e38;
+            font-size: 22px;
+            background: none;
+            padding: 0 0 8px 0;
+            border-radius: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed #13a68f;
+        }
+
+        .intro p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #222;
+        }
+
+        .district {
+            background-color: rgba(255, 255, 255, 0.90);
+            color: black;
+            margin: 26px 40px;
+            padding: 28px;
+            border-radius: 14px;
+            text-align: left;
+            border-top: 6px solid #e05c2a;
+            position: relative;
+            z-index: 1;
+        }
+
+        .district h1 {
+            background-color: #1b5e38;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-family: Georgia;
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+
+        .district h2 {
+            background-color: #e05c2a;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 8px;
+            font-size: 19px;
+            margin: 16px 0 12px;
+        }
+
+        .district p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .district ul {
+            font-size: 15px;
+            line-height: 2.2;
+            padding-left: 10px;
+            color: #222;
+            list-style: none;
+        }
+
+        .district ul li {
+            padding: 3px 0 3px 8px;
+        }
+
+        .img-row {
+            text-align: center;
+            margin: 18px 0;
+        }
+
+        .img-row img {
+         border: 4px solid #0a7c6e;
+         border-radius: 10px;
+         box-shadow: 5px 5px 16px gray;
+         margin: 8px;
+         width: 260px;
+         height: 175px;
+        object-fit: cover;
+
+        }
+
+        a {
+            color: #0a7c6e;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e05c2a;
+            text-decoration: underline;
+        }
+
+        .closing {
+            background-color: rgba(15, 60, 35, 0.92);
+            margin: 26px 40px;
+            padding: 34px;
+            border-radius: 14px;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .closing h2 {
+            background: none;
+            color: #e8a020;
+            font-family: Georgia;
+            font-size: 26px;
+            padding: 0 0 12px 0;
+            border-radius: 0;
+            margin-bottom: 14px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .closing p {
+            color: #c8f5e8;
+            font-size: 16px;
+        }
+
+        .closing a {
+            color: #e8a020;
+        }
+
+        .closing a:hover {
+            color: white;
+        }
+
+        .logos {
+            background-color: #0a1f10;
+            padding: 28px 20px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logos p {
+            color: #e8a020;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+        }
+
+       .logos img {
+            width: 170px;
+            height: 70px;
+            margin: 14px 16px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 6px;
+        }
+
+        .footer {
+            background-color: #050f0a;
+            color: #7abfa0;
+            padding: 14px;
+            font-size: 13px;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="navbar">
+        <a href="home%20page.html">&#127968; Home</a>
+        <a href="website%201.html" class="active">&#127981; Northern &amp; Western</a>
+        <a href="website%202.html">&#127795; Southern &amp; Eastern</a>
+    </div>
+
+    
+    <div class="banner">
+        <h1>&#127860; Taste of Belize &#127860;</h1>
+        <p>Northern &amp; Western Districts</p>
+    </div>
+
+    
+    <div class="intro">
+        <h2>Welcome, Local Tourists! &#127758;</h2>
+        <p>
+            Welcome to <b>Taste of Belize</b> — your ultimate guide to the best dining experiences across our beautiful country!
+            Whether you are a foodie, an adventurer, or simply looking for a great meal, Belize has something special for every palate.
+            This page invites you to explore the wonderful restaurants found in the <b>Northern and Western Districts</b> of Belize —
+            Corozal, Orange Walk, and Cayo. Get ready to taste the culture, the history, and the heart of Belize on every plate! &#127869;
+        </p>
+    </div>
+
+    
+    <div class="district">
+        <h1>Corozal District</h1>
+        <p>
+            <font color="#1b5e38"><b>Corozal</b></font> is a charming town in the far north of Belize, nestled along the shores of Corozal Bay.
+            Known for its rich Maya and mestizo heritage, Corozal offers a peaceful and welcoming atmosphere.
+            The town is famous for its colorful buildings, fresh seafood, and warm community spirit.
+            A visit to Corozal is truly an unforgettable cultural experience!
+        </p>
+
+        <h2>&#127869; Corozo Blues Restaurant</h2>
+        <p>
+            <font color="#0a7c6e"><b>Corozo Blues</b></font> is one of Corozal's most beloved dining spots, offering a relaxed waterfront atmosphere
+            and a menu full of authentic Belizean flavors. Whether you're stopping in for lunch or a romantic dinner,
+            Corozo Blues promises a memorable experience with every bite.
+        </p>
+
+        <p><b>&#127860; Signature Dishes &amp; Drinks:</b></p>
+        <ul>
+            <li>&#127843; Grilled Red Snapper with Rice and Beans</li>
+            <li>&#127830; Belizean Stew Chicken</li>
+            <li>&#127837; Garnaches and Salbutes</li>
+            <li>&#127863; Fresh Coconut Water</li>
+            <li>&#127867; Sorrel Drink</li>
+            <li>&#9749; Local Rum Punch</li>
+        </ul>
+
+        <div class="img-row">
+            <img src="Corozo%20blues%20restaurant.jpg" alt="Corozo Blues Restaurant" />
+            <img src="Corozo%20blues%20food.jpg" alt="Corozo Blues Food" />
+        </div>
+    </div>
+
+    
+    <div class="district">
+        <h1> Orange Walk District</h1>
+        <p>
+            <font color="#1b5e38"><b>Orange Walk</b></font>, fondly known as the <i>"Sugar City"</i> of Belize, is located in the heart of northern Belize.
+            It is home to the famous Lamanai Maya ruins and is surrounded by lush sugarcane fields and rich farmland.
+            Orange Walk is a vibrant hub of culture, history, and of course — incredible food!
+        </p>
+
+        <h2>&#127869; Cocina Sabor Restaurant</h2>
+        <p>
+            <font color="#0a7c6e"><b>Cocina Sabor</b></font> brings the bold and delicious flavors of northern Belize cuisine to your table.
+            This local gem is known for its hearty portions, fresh ingredients, and warm, family-friendly service.
+            From breakfast to dinner, Cocina Sabor is a must-visit when exploring Orange Walk.
+        </p>
+
+        <p><b>&#127860; Signature Dishes &amp; Drinks:</b></p>
+        <ul>
+            <li>&#127831; Tamales and Panades</li>
+            <li>&#127830; Relleno Negro (Black Dinner)</li>
+            <li>&#127837; Escabeche (Onion Soup)</li>
+            <li>&#127857; Fry Jacks with Eggs and Cheese</li>
+            <li>&#127863; Horchata</li>
+            <li>&#9749; Hot Chocolate</li>
+        </ul>
+
+        <div class="img-row">
+            <img src="Cosina%20sabor%20restaurant.jpg" alt="Cocina Sabor Restaurant" />
+            <img src="cocinasabor%20food.jpg" alt="Cocina Sabor Dishes" />
+        </div>
+    </div>
+
+    
+    <div class="district">
+        <h1> Cayo District</h1>
+        <p>
+            <font color="#1b5e38"><b>Cayo</b></font> is the largest district in Belize and a true paradise for nature lovers and adventurers.
+            Surrounded by lush rainforests, ancient Maya ruins like Xunantunich and Caracol, and the stunning Macal River,
+            Cayo is the adventure capital of Belize. After a day of exploring, there is nothing better than a delicious
+            meal at one of Cayo's finest restaurants.
+        </p>
+
+        <h2>&#127869; Guava Limb Restaurant</h2>
+        <p>
+            <font color="#0a7c6e"><b>Guava Limb</b></font> is a celebrated restaurant in San Ignacio, Cayo, known for its creative fusion of Belizean
+            and international cuisine. Set in a beautiful garden atmosphere, dining at Guava Limb feels like a true escape
+            into nature while enjoying some of the finest food Belize has to offer.
+        </p>
+
+        <p><b>&#127860; Signature Dishes &amp; Drinks:</b></p>
+        <ul>
+            <li>&#127830; Cohune Palm Heart Salad</li>
+            <li>&#127843; River Fish with Chimichurri</li>
+            <li>&#127837; Cayo-style Gibnut (Royal Rat)</li>
+            <li>&#127857; Plantain Chips with Guacamole</li>
+            <li>&#127863; Fresh Lime Juice</li>
+            <li>&#9749; Guava Punch</li>
+        </ul>
+
+        <div class="img-row">
+            <img src="guavalimk%20restauarant.jfif" alt="Guava Limb Restaurant" />
+            <img src="guavalimb%20food.jpg" alt="Guava Limb Dishes" />
+        </div>
+    </div>
+
+    
+    <div class="closing">
+        <h2>&#127758; Explore More of Belize! &#127758;</h2>
+        <p>
+            We hope this guide has inspired you to visit these amazing restaurants across Belize's Northern and Western Districts!
+            But don't stop here — <b>Belize is filled with hundreds more amazing dining experiences</b> waiting for you to discover.
+            From street food stalls to fine dining, every corner of this beautiful country has something delicious to offer.
+            <br><br>
+            <b>Come hungry. Leave happy. That's the Belizean way! &#127869;</b>
+            <br><br>
+            Also check out our <a href="website 2.html">Southern &amp; Eastern Districts page</a> for more amazing restaurants!
+        </p>
+
+        <p style="margin-top:22px; color:#e8d080;"><b>&#127909; Watch: Discover Belize!</b></p>
+        <a href="https://youtu.be/fQlXN20YLbI" target="_blank">
+            <img src="https://img.youtube.com/vi/fQlXN20YLbI/0.jpg"
+                 width="560" height="315"
+                 style="border-radius:10px; border:3px solid #e8a020; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+        </a>
+        <p style="color:#c8f5e8; margin-top:8px;"><i>Click the image above to watch the video!</i></p>
+    </div>
+
+   
+    <div class="logos">
+        <p>This webpage is proudly brought to you by:</p>
+        <img src="btb%20logo.png" alt="BTB Logo" />
+        <img src="BTIA-LOGO.jpg" alt="BTIA Logo" />
+        <img src="beltraide_logo.jfif" alt="Beltraide Logo" />
+        <img src="ministry%20of%20tourism%20logo.png" alt="Ministry of Tourism Logo" />
+    </div>
+
+    
+    <div class="footer">
+        &copy; 2026 Taste of Belize &nbsp;|&nbsp; Ministry of Tourism &nbsp;|&nbsp; In collaboration with BTB, BTIA &amp; Beltraide
+    </div>
+
+</body>
+</html>

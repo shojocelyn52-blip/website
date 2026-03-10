@@ -1,0 +1,299 @@
+<html>
+
+<head>
+    <title>Taste of Belize - Home</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(5, 30, 20, 0.60);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .navbar {
+            background-color: #0a1f10;
+            padding: 14px;
+            border-bottom: 3px solid #e8a020;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 22px;
+            margin: 0 6px;
+            border-radius: 6px;
+        }
+
+        .navbar a:hover {
+            background-color: #e8a020;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #e05c2a;
+            color: white;
+        }
+
+        .banner {
+            background-color: rgba(10, 60, 40, 0.82);
+            padding: 70px 20px 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner h1 {
+            font-family: Georgia;
+            font-size: 54px;
+            color: #e8a020;
+            text-shadow: 2px 2px 8px black;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .banner p {
+            font-size: 17px;
+            color: #c8f5e8;
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        .welcome {
+            background-color: rgba(255, 255, 255, 0.90);
+            color: black;
+            padding: 28px 50px;
+            margin: 28px 60px;
+            border-left: 6px solid #13a68f;
+            border-radius: 12px;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        .welcome h2 {
+            font-family: Georgia;
+            color: #1b5e38;
+            font-size: 22px;
+            background: none;
+            padding: 0 0 8px 0;
+            border-radius: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed #13a68f;
+        }
+
+        .welcome p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #222;
+        }
+
+        .cards-title {
+            font-family: Georgia;
+            font-size: 26px;
+            color: #e8a020;
+            margin: 10px 0 20px;
+            text-shadow: 2px 2px 6px black;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cards {
+            margin: 0 60px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.92);
+            color: black;
+            border-radius: 14px;
+            padding: 28px;
+            width: 340px;
+            border-top: 6px solid #13a68f;
+            display: inline-block;
+            margin: 10px 16px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .card h2 {
+            font-family: Georgia;
+            font-size: 20px;
+            color: #1b5e38;
+            background: none;
+            padding: 0 0 8px 0;
+            border-radius: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #13a68f;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            font-size: 14px;
+            color: #333;
+            line-height: 2.1;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 22px;
+            background-color: #1b5e38;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            background-color: #e8a020;
+            color: black;
+        }
+
+        .logos {
+            background-color: #0a1f10;
+            padding: 26px 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logos p {
+            color: #e8a020;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .logos img {
+            width: 170px;
+            height: 70px;
+            margin: 14px 16px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 6px;
+        }
+
+        .footer {
+            background-color: #050f0a;
+            color: #7abfa0;
+            padding: 14px;
+            font-size: 13px;
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="navbar">
+        <a href="home%20page.html" class="active">&#127968; Home</a>
+        <a href="website%201.html">&#127981; Northern &amp; Western</a>
+        <a href="website%202.html">&#127795; Southern &amp; Eastern</a>
+    </div>
+
+    
+    <div class="banner">
+        <h1>&#127860; Taste of Belize &#127860;</h1>
+        <p>Discover the Flavors of Our Beautiful Country</p>
+    </div>
+
+    
+    <div class="welcome">
+        <h2>&#127758; Welcome to Taste of Belize!</h2>
+        <p>
+            Belize is a land of incredible diversity  from the lush rainforests of Cayo to the crystal-clear Caribbean waters of Placencia,
+            from the vibrant streets of Belize City to the ancient Maya villages of Toledo.
+            And with that diversity comes a food culture unlike anywhere else in the world.
+            <br><br>
+            <b>Taste of Belize</b> is your official guide to the best local restaurants across all <b>6 districts</b> of our beautiful country,
+            proudly brought to you by the <b>Ministry of Tourism</b>, in collaboration with <b>BTB</b>, <b>BTIA</b>, and <b>Beltraide</b>.
+            Whether you're exploring the north, heading west, or venturing south — there's always an amazing meal waiting for you!
+            <br><br>
+            Select a region below to begin your culinary journey. &#127869;
+        </p>
+    </div>
+
+    <p class="cards-title">&#127757; Choose Your Region</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <p style="font-size:40px; margin-bottom:10px;">&#127981;</p>
+            <h2>Northern &amp; Western Districts</h2>
+            <p>Explore the amazing restaurants of Belize's northern and western regions — rich in Maya heritage, sugarcane culture, and jungle adventure.</p>
+            <ul>
+                <li> Corozal — Corozo Blues</li>
+                <li> Orange Walk — Cocina Sabor</li>
+                <li> Cayo — Guava Limb</li>
+            </ul>
+            <a href="website 1.html">Explore Now &#8594;</a>
+        </div>
+
+        <div class="card" style="border-top-color: #e05c2a;">
+            <p style="font-size:40px; margin-bottom:10px;">&#127795;</p>
+            <h2 style="color:#e05c2a; border-bottom-color:#e05c2a;">Southern &amp; Eastern Districts</h2>
+            <p>Discover the rich Garifuna and Creole cuisine of Belize's southern and eastern regions — where the Caribbean Sea meets incredible flavors.</p>
+            <ul>
+                <li> Belize City — St. George Restaurant</li>
+                <li> Stann Creek — Tipsy Tuna</li>
+                <li>Toledo — A Piece of Chicken</li>
+            </ul>
+            <a href="website 2.html" style="background-color:#e05c2a;">Explore Now &#8594;</a>
+        </div>
+
+    </div>
+
+   
+    <div class="logos">
+        <p>This webpage is proudly brought to you by:</p>
+        <img src="btb%20logo.png" alt="BTB Logo" />
+        <img src="BTIA-LOGO.jpg" alt="BTIA Logo" />
+        <img src="beltraide_logo.jfif" alt="Beltraide Logo" />
+        <img src="ministry%20of%20tourism%20logo.png" alt="Ministry of Tourism Logo" />
+    </div>
+
+    
+    <div class="footer">
+        &copy; 2026 Taste of Belize &nbsp;|&nbsp; Ministry of Tourism &nbsp;|&nbsp; In collaboration with BTB, BTIA &amp; Beltraide
+    </div>
+
+</body>
+</html>
